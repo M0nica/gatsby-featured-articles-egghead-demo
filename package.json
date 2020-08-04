@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-minimal-blog",
+  "name": "gatsby-featured-articles-egghead-demo",
   "private": true,
   "description": "A simple minimal starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Boy with Silver Wings <agney@outlook.in>",
+  "author": "Monica Powell <github@aboutmonica.com>",
   "dependencies": {
     "gatsby": "^2.23.3",
     "gatsby-image": "^2.4.7",
@@ -65,9 +65,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/agneym/gatsby-blog-starter"
+    "url": "https://github.com/m0nica/gatsby-featured-articles-egghead-demo"
   },
   "bugs": {
-    "url": "https://github.com/agneym/gatsby-blog-starter/issues"
+    "url": "https://github.com/m0nica/gatsby-featured-articles-egghead-demo/issues"
   }
 }

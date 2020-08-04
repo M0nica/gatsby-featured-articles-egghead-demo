@@ -2,10 +2,10 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby Blog Starter`,
     description: `A Blog starter`,
-    author: `Boy with Silver Wings`,
+    author: `A woman with a keyboard`,
     authorTagline: 'Engineer. Driven by Passion',
     social: {
-      twitter: `agneymenon`,
+      twitter: `waterproofheart`,
     },
   },
   plugins: [
