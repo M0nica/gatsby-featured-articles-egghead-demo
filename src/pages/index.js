@@ -28,9 +28,22 @@ class BlogIndex extends Component {
         <Bio />
         <main>
           <Title>Latest Posts</Title>
-          {posts.map(({ node }) => {
-            return <Post key={node.id} node={node} />;
-          })}
+          {posts
+            .filter(({ node }) => {
+              return !node.frontmatter.featured;
+            })
+            .map(({ node }) => {
+              return <Post key={node.id} node={node} />;
+            })}
+
+          <Title>Featured Posts</Title>
+          {posts
+            .filter(({ node }) => {
+              return node.frontmatter.featured;
+            })
+            .map(({ node }) => {
+              return <Post key={node.id} node={node} />;
+            })}
         </main>
       </Layout>
     );
@@ -60,6 +73,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            featured
           }
         }
       }
